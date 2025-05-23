@@ -1,0 +1,1174 @@
+<!doctype html>
+<html lang="en">
+  <!--begin::Head-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>AdminLTE | Dashboard v2</title>
+    <!--data table: sonradan eklediğim-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.0/css/dataTables.dataTables.css" />
+    <!--data table: sonradan eklediğim bitti-->
+    <!--begin::Primary Meta Tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="AdminLTE | Dashboard v2" />
+    <meta name="author" content="ColorlibHQ" />
+    <meta
+      name="description"
+      content="AdminLTE is a Free Bootstrap 5 Admin Dashboard, 30 example pages using Vanilla JS."
+    />
+    <meta
+      name="keywords"
+      content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard"
+    />
+    <!--end::Primary Meta Tags-->
+    <!--begin::Fonts-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css"
+      integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q="
+      crossorigin="anonymous"
+    />
+    <!--end::Fonts-->
+    <!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/styles/overlayscrollbars.min.css"
+      integrity="sha256-tZHrRjVqNSRyWg2wbppGnT833E/Ys0DHWGwT04GiqQg="
+      crossorigin="anonymous"
+    />
+    <!--end::Third Party Plugin(OverlayScrollbars)-->
+    <!--begin::Third Party Plugin(Bootstrap Icons)-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha256-9kPW/n5nn53j4WMRYAxe9c1rCY96Oogo/MKSVdKzPmI="
+      crossorigin="anonymous"
+    />
+    <!--end::Third Party Plugin(Bootstrap Icons)-->
+    <!--begin::Required Plugin(AdminLTE)-->
+    <link rel="stylesheet" href="../../dist/css/adminlte.css" />
+    <!--end::Required Plugin(AdminLTE)-->
+    <!-- apexcharts -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.css"
+      integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <!--begin::App Wrapper-->
+    <div class="app-wrapper">
+      <!--begin::Header-->
+      <nav class="app-header navbar navbar-expand bg-body">
+        <!--begin::Container-->
+        <div class="container-fluid">
+          <!--begin::Start Navbar Links-->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button">
+                <i class="bi bi-list"></i>
+              </a>
+            </li>
+            <li class="nav-item d-none d-md-block"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item d-none d-md-block"><a href="about.html" class="nav-link">Contact</a></li>
+          </ul>
+          <!--end::Start Navbar Links-->
+          <!--begin::End Navbar Links-->
+          <ul class="navbar-nav ms-auto">
+            <!--begin::Navbar Search-->
+            <li class="nav-item">
+              <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                <i class="bi bi-search"></i>
+              </a>
+            </li>
+            <!--end::Navbar Search-->
+            <!--begin::Messages Dropdown Menu-->
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#">
+                <i class="bi bi-chat-text"></i>
+                <span class="navbar-badge badge text-bg-danger">3</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
+                <a href="#" class="dropdown-item">
+                  <!--begin::Message-->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="../../dist/assets/img/user1-128x128.jpg"
+                        alt="User Avatar"
+                        class="img-size-50 rounded-circle me-3"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <h3 class="dropdown-item-title">
+                        Brad Diesel
+                        <span class="float-end fs-7 text-danger"
+                          ><i class="bi bi-star-fill"></i
+                        ></span>
+                      </h3>
+                      <p class="fs-7">Call me whenever you can...</p>
+                      <p class="fs-7 text-secondary">
+                        <i class="bi bi-clock-fill me-1"></i> 4 Hours Ago
+                      </p>
+                    </div>
+                  </div>
+                  <!--end::Message-->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <!--begin::Message-->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="../../dist/assets/img/user8-128x128.jpg"
+                        alt="User Avatar"
+                        class="img-size-50 rounded-circle me-3"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <h3 class="dropdown-item-title">
+                        John Pierce
+                        <span class="float-end fs-7 text-secondary">
+                          <i class="bi bi-star-fill"></i>
+                        </span>
+                      </h3>
+                      <p class="fs-7">I got your message bro</p>
+                      <p class="fs-7 text-secondary">
+                        <i class="bi bi-clock-fill me-1"></i> 4 Hours Ago
+                      </p>
+                    </div>
+                  </div>
+                  <!--end::Message-->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <!--begin::Message-->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <img
+                        src="../../dist/assets/img/user3-128x128.jpg"
+                        alt="User Avatar"
+                        class="img-size-50 rounded-circle me-3"
+                      />
+                    </div>
+                    <div class="flex-grow-1">
+                      <h3 class="dropdown-item-title">
+                        Nora Silvester
+                        <span class="float-end fs-7 text-warning">
+                          <i class="bi bi-star-fill"></i>
+                        </span>
+                      </h3>
+                      <p class="fs-7">The subject goes here</p>
+                      <p class="fs-7 text-secondary">
+                        <i class="bi bi-clock-fill me-1"></i> 4 Hours Ago
+                      </p>
+                    </div>
+                  </div>
+                  <!--end::Message-->
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+              </div>
+            </li>
+            <!--end::Messages Dropdown Menu-->
+            <!--begin::Notifications Dropdown Menu-->
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#">
+                <i class="bi bi-bell-fill"></i>
+                <span class="navbar-badge badge text-bg-warning">15</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
+                <span class="dropdown-item dropdown-header">15 Notifications</span>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <i class="bi bi-envelope me-2"></i> 4 new messages
+                  <span class="float-end text-secondary fs-7">3 mins</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <i class="bi bi-people-fill me-2"></i> 8 friend requests
+                  <span class="float-end text-secondary fs-7">12 hours</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">
+                  <i class="bi bi-file-earmark-fill me-2"></i> 3 new reports
+                  <span class="float-end text-secondary fs-7">2 days</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item dropdown-footer"> See All Notifications </a>
+              </div>
+            </li>
+            <!--end::Notifications Dropdown Menu-->
+            <!--begin::Fullscreen Toggle-->
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-lte-toggle="fullscreen">
+                <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i>
+                <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none"></i>
+              </a>
+            </li>
+            <!--end::Fullscreen Toggle-->
+            <!--begin::User Menu Dropdown-->
+            <li class="nav-item dropdown user-menu">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                <img
+                  src="../../dist/assets/img/user2-160x160.jpg"
+                  class="user-image rounded-circle shadow"
+                  alt="User Image"
+                />
+                <span class="d-none d-md-inline">İclal Aca</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
+                <!--begin::User Image-->
+                <li class="user-header text-bg-primary">
+                  <img
+                    src="../../dist/assets/img/user2-160x160.jpg"
+                    class="rounded-circle shadow"
+                    alt="User Image"
+                  />
+                  <p>
+                    İclal Aca - Data Scientist
+                    
+                  </p>
+                </li>
+                <!--end::User Image-->
+                <!--begin::Menu Footer-->
+                <li class="user-footer">
+                  <a href="logout.html" class="btn btn-default btn-flat float-end">Sign out</a>
+                </li>
+                <!--end::Menu Footer-->
+              </ul>
+            </li>
+            <!--end::User Menu Dropdown-->
+          </ul>
+          <!--end::End Navbar Links-->
+        </div>
+        <!--end::Container-->
+      </nav>
+      <!--end::Header-->
+      <!--begin::Sidebar-->
+      <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
+        <!--begin::Sidebar Brand-->
+        <div class="sidebar-brand">
+          <!--begin::Brand Link-->
+          <a href="./index.html" class="brand-link">
+            <!--begin::Brand Image-->
+            <img
+              src="../../src/assets/img/Data-4.png"
+              alt="AdminLTE Logo"
+              class="brand-image opacity-75 shadow"
+            />
+            <!--end::Brand Image-->
+          </a>
+          <!--end::Brand Link-->
+        </div>
+        <!--end::Sidebar Brand-->
+        <!--begin::Sidebar Wrapper-->
+        <div class="sidebar-wrapper">
+          <nav class="mt-2">
+            <!--begin::Sidebar Menu-->
+            <ul
+              class="nav sidebar-menu flex-column"
+              data-lte-toggle="treeview"
+              role="menu"
+              data-accordion="false"
+            >
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                  <ion-icon name="home-outline"></ion-icon>
+                  <p>Home</p>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="dashboard.html" class="nav-link">
+                  <ion-icon name="pie-chart-outline"></ion-icon>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <ion-icon name="school-outline"></ion-icon>
+                  <p>
+                    Trainings
+                    <i class="nav-arrow bi bi-chevron-right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="basic.html" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Basic Level Trainings</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="intermediate.html" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Intermediate Trainings</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="advanced.html" class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>Advanced Trainings</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a href="articles.html" class="nav-link">
+                  <ion-icon name="receipt-outline"></ion-icon>
+                  <p>Articles</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="statistics.html" class="nav-link">
+                  <ion-icon name="bar-chart-outline"></ion-icon>
+                  <p>Statistics</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">
+                  <ion-icon name="bulb-outline"></ion-icon>
+                  <p>About</p>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a href="logout.html" class="nav-link">
+                  <ion-icon name="power-outline"></ion-icon>
+                  <p>Logout</p>
+                </a>
+              </li>
+
+          
+            </ul>
+            <!--end::Sidebar Menu-->
+          </nav>
+        </div>
+        <!--end::Sidebar Wrapper-->
+      </aside>
+      <!--end::Sidebar-->
+      <!--begin::App Main-->
+      <main class="app-main">
+        <!--begin::App Content Header-->
+        <div class="app-content-header">
+          <!--begin::Container-->
+          <div class="container-fluid">
+            <!--begin::Row-->
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Data Science Tools and Usage Areas</h1>
+                    <table id="table1" class="display">
+                        <thead>
+                            <tr>
+                                <th>Tool Name</th>
+                                <th>Solid</th>
+                                <th>Area of Use</th>
+                                <th>Learning Difficulty (1-5)</th>
+                                <th>Open Source?</th>
+                                <th>Projects Utilised</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Python</td>
+                                <td>Data Cleaning</td>
+                                <td>Data preparation, analysis</td>
+                                <td>2</td>
+                                <td>Yes</td>
+                                <td>“Sales analysis with Pandas”, “Classification with Scikit-learn”</td>
+                            </tr>
+                            <tr>
+                                <td>R</td>
+                                <td>Data Analysis</td>
+                                <td>Statistical analysis</td>
+                                <td>3</td>
+                                <td>Yes</td>
+                                <td>“Visualization with ggplot2”, “Model development with Caret”</td>
+                            </tr>
+                            <tr>
+                                <td>Tableau</td>
+                                <td>Visualization</td>
+                                <td>Data visualization</td>
+                                <td>2</td>
+                                <td>No</td>
+                                <td>“Sales report dashboard”</td>
+                            </tr>
+                            <tr>
+                                <td>TensorFlow</td>
+                                <td>Machine Learning</td>
+                                <td>Deep learning, model building</td>
+                                <td>4</td>
+                                <td>Yes</td>
+                                <td>“Image classification”, “Natural language processing”</td>
+                            </tr>
+                            <tr>
+                                <td>Power BI</td>
+                                <td>Visualization</td>
+                                <td>Business intelligence reports</td>
+                                <td>2</td>
+                                <td>No</td>
+                                <td>“Financial reporting”</td>
+                            </tr>
+                            <tr>
+                                <td>SQL</td>
+                                <td>Database</td>
+                                <td>Data querying</td>
+                                <td>3</td>
+                                <td>Yes</td>
+                                <td>“Customer data analysis”</td>
+                            </tr>
+                            <tr>
+                                <td>Jupyter</td>
+                                <td>Notebook</td>
+                                <td>Prototyping, presentation</td>
+                                <td>2</td>
+                                <td>Yes</td>
+                                <td>“Data analysis presentation”, “Model prototype”</td>
+                            </tr>
+                            <tr>
+                                <td>Pandas</td>
+                                <td>Data Cleaning</td>
+                                <td>Data preparation, manipulation</td>
+                                <td>2</td>
+                                <td>Yes</td>
+                                <td>“Sales analysis”, “Time series preparation”</td>
+                            </tr>
+                            <tr>
+                                <td>Keras</td>
+                                <td>Machine Learning</td>
+                                <td>Deep learning</td>
+                                <td>3</td>
+                                <td>Yes</td>
+                                <td>“Image processing”, “Text classification”</td>
+                            </tr>
+                            <tr>
+                                <td>Scikit-learn</td>
+                                <td>Machine Learning</td>
+                                <td>Model building</td>
+                                <td>3</td>
+                                <td>Yes</td>
+                                <td>“Classification models”, “Regression analyses”</td>
+                            </tr>
+                            <tr>
+                                <td>Excel</td>
+                                <td>Data Cleaning</td>
+                                <td>Basic data analysis</td>
+                                <td>1</td>
+                                <td>No</td>
+                                <td>“Market analysis”, “Customer data report”</td>
+                            </tr>
+                            <tr>
+                                <td>Apache Spark</td>
+                                <td>Data Cleaning</td>
+                                <td>Big data processing</td>
+                                <td>4</td>
+                                <td>Yes</td>
+                                <td>“Big data processing”, “Real-time analytics”</td>
+                            </tr>
+                            <tr>
+                                <td>SAS</td>
+                                <td>Data Analysis</td>
+                                <td>Statistical analysis</td>
+                                <td>4</td>
+                                <td>No</td>
+                                <td>“Healthcare sector analyses”</td>
+                            </tr>
+                            <tr>
+                                <td>RapidMiner</td>
+                                <td>Machine Learning</td>
+                                <td>Model building</td>
+                                <td>3</td>
+                                <td>No</td>
+                                <td>“Marketing campaign optimization”</td>
+                            </tr>
+                            <tr>
+                                <td>MATLAB</td>
+                                <td>Data Analysis</td>
+                                <td>Numerical computation</td>
+                                <td>3</td>
+                                <td>No</td>
+                                <td>“Signal processing”, “Engineering calculations”</td>
+                            </tr>
+                            <tr>
+                                <td>KNIME</td>
+                                <td>Automation</td>
+                                <td>Workflow design</td>
+                                <td>3</td>
+                                <td>Yes</td>
+                                <td>“ETL process automation”</td>
+                            </tr>
+                            <tr>
+                                <td>Orange</td>
+                                <td>Machine Learning</td>
+                                <td>Visual ML modeling</td>
+                                <td>2</td>
+                                <td>Yes</td>
+                                <td>“Interactive classification tasks”</td>
+                            </tr>
+                            <tr>
+                                <td>Google Colab</td>
+                                <td>Notebook</td>
+                                <td>Cloud-based ML experiments</td>
+                                <td>2</td>
+                                <td>Yes</td>
+                                <td>“Model training with free GPU”</td>
+                            </tr>
+                            <tr>
+                                <td>BigQuery</td>
+                                <td>Database</td>
+                                <td>Big data querying</td>
+                                <td>3</td>
+                                <td>No</td>
+                                <td>“Marketing campaign data analysis”</td>
+                            </tr>
+                            <tr>
+                                <td>Looker</td>
+                                <td>Visualization</td>
+                                <td>Data-driven business decisions</td>
+                                <td>3</td>
+                                <td>No</td>
+                                <td>“Sales dashboard”</td>
+                            </tr>
+                            <tr>
+                                <td>Apache Hadoop</td>
+                                <td>Data Cleaning</td>
+                                <td>Distributed data processing</td>
+                                <td>4</td>
+                                <td>Yes</td>
+                                <td>“Data lake creation”</td>
+                            </tr>
+                            <tr>
+                                <td>Alteryx</td>
+                                <td>Automation</td>
+                                <td>Data blending and analytics</td>
+                                <td>3</td>
+                                <td>No</td>
+                                <td>“Customer segmentation”</td>
+                            </tr>
+                            <tr>
+                                <td>Git</td>
+                                <td>Version Control</td>
+                                <td>Code versioning and collaboration</td>
+                                <td>2</td>
+                                <td>Yes</td>
+                                <td>“Team ML project management”</td>
+                            </tr>
+                            <tr>
+                                <td>Airflow</td>
+                                <td>Automation</td>
+                                <td>Workflow scheduling</td>
+                                <td>4</td>
+                                <td>Yes</td>
+                                <td>“Automated data pipeline”</td>
+                            </tr>
+                            <tr>
+                                <td>D3.js</td>
+                                <td>Visualization</td>
+                                <td>Interactive data visualizations</td>
+                                <td>4</td>
+                                <td>Yes</td>
+                                <td>“Custom chart for web app”</td>
+                            </tr>
+                            <tr>
+                                <td>VS Code</td>
+                                <td>IDE</td>
+                                <td>Code development</td>
+                                <td>2</td>
+                                <td>Yes</td>
+                                <td>“Python scripting for data preprocessing”</td>
+                            </tr>
+                            <tr>
+                                <td>Databricks</td>
+                                <td>Machine Learning</td>
+                                <td>Collaborative analytics</td>
+                                <td>3</td>
+                                <td>No</td>
+                                <td>“ML lifecycle management”</td>
+                            </tr>
+                            <tr>
+                                <td>Google Data Studio</td>
+                                <td>Visualization</td>
+                                <td>Marketing reports</td>
+                                <td>2</td>
+                                <td>Yes</td>
+                                <td>“Monthly performance tracking”</td>
+                            </tr>
+                            <tr>
+                                <td>NumPy</td>
+                                <td>Data Cleaning</td>
+                                <td>Numerical computations</td>
+                                <td>2</td>
+                                <td>Yes</td>
+                                <td>“Array-based data transformations”</td>
+                            </tr>
+                            <tr>
+                                <td>Anaconda</td>
+                                <td>Environment</td>
+                                <td>Data science environment setup</td>
+                                <td>1</td>
+                                <td>Yes</td>
+                                <td>“Tool bundling for ML development”</td>
+                            </tr>
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Tool Name</th>
+                                <th>Category</th>
+                                <th>Usage Area</th>
+                                <th>Learning Difficulty (1-5)</th>
+                                <th>Open Source?</th>
+                                <th>Projects Used In</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+    
+    
+                </div>
+            </div>
+              
+      
+              <br><br><br>
+              <div class="row">
+                  <div class="col-12">
+                      <h1 class="text-center">Machine Learning Algorithms Comparison</h1>
+                      <table id="table2" class="display">
+                          <thead>
+                              <tr>
+                                  <th>Algorithm Name</th>
+                                  <th>Accuracy (%)</th>
+                                  <th>Training Time (sec)</th>
+                                  <th>Usage Area</th>
+                                  <th>Data Type</th>
+                                  <th>Notes / Description</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>Random Forest</td>
+                                  <td>88</td>
+                                  <td>120</td>
+                                  <td>Classification</td>
+                                  <td>Numerical, categorical</td>
+                                  <td>Suitable for complex data</td>
+                              </tr>
+                              <tr>
+                                  <td>KNN</td>
+                                  <td>82</td>
+                                  <td>30</td>
+                                  <td>Classification</td>
+                                  <td>Numerical, categorical</td>
+                                  <td>Simple and fast but slow on large datasets</td>
+                              </tr>
+                              <tr>
+                                  <td>SVM</td>
+                                  <td>85</td>
+                                  <td>150</td>
+                                  <td>Classification</td>
+                                  <td>Numerical</td>
+                                  <td>Good generalization, risk of overfitting</td>
+                              </tr>
+                              <tr>
+                                  <td>Logistic Reg.</td>
+                                  <td>80</td>
+                                  <td>50</td>
+                                  <td>Binary classification</td>
+                                  <td>Numerical, categorical</td>
+                                  <td>Easy to interpret</td>
+                              </tr>
+                              <tr>
+                                  <td>Naive Bayes</td>
+                                  <td>78</td>
+                                  <td>25</td>
+                                  <td>Text classification</td>
+                                  <td>Categorical</td>
+                                  <td>Fast but assumes independence</td>
+                              </tr>
+                              <tr>
+                                  <td>Gradient Boosting</td>
+                                  <td>90</td>
+                                  <td>300</td>
+                                  <td>Classification</td>
+                                  <td>Numerical, categorical</td>
+                                  <td>High accuracy, slow training</td>
+                              </tr>
+                              <tr>
+                                  <td>XGBoost</td>
+                                  <td>92</td>
+                                  <td>280</td>
+                                  <td>Classification</td>
+                                  <td>Numerical, categorical</td>
+                                  <td>Fast and effective, requires tuning</td>
+                              </tr>
+                              <tr>
+                                  <td>Decision Tree</td>
+                                  <td>75</td>
+                                  <td>40</td>
+                                  <td>Classification</td>
+                                  <td>Numerical, categorical</td>
+                                  <td>Simple but prone to overfitting</td>
+                              </tr>
+                              <tr>
+                                  <td>AdaBoost</td>
+                                  <td>87</td>
+                                  <td>200</td>
+                                  <td>Classification</td>
+                                  <td>Numerical, categorical</td>
+                                  <td>Ensemble method, balanced performance</td>
+                              </tr>
+                              <tr>
+                                  <td>LSTM</td>
+                                  <td>89</td>
+                                  <td>600</td>
+                                  <td>Time series, NLP</td>
+                                  <td>Numerical</td>
+                                  <td>Good for long dependencies</td>
+                              </tr>
+                              <tr>
+                                  <td>CNN</td>
+                                  <td>91</td>
+                                  <td>800</td>
+                                  <td>Image processing</td>
+                                  <td>Numerical</td>
+                                  <td>Ideal for image recognition</td>
+                              </tr>
+                              <tr>
+                                  <td>Linear Reg.</td>
+                                  <td>70</td>
+                                  <td>20</td>
+                                  <td>Regression</td>
+                                  <td>Numerical</td>
+                                  <td>Simple and interpretable</td>
+                              </tr>
+                              <tr>
+                                  <td>DBSCAN</td>
+                                  <td>68</td>
+                                  <td>180</td>
+                                  <td>Clustering</td>
+                                  <td>Numerical</td>
+                                  <td>Works well with noisy data</td>
+                              </tr>
+                              <tr>
+                                  <td>K-Means</td>
+                                  <td>65</td>
+                                  <td>50</td>
+                                  <td>Clustering</td>
+                                  <td>Numerical</td>
+                                  <td>Fast but needs predefined cluster count</td>
+                              </tr>
+                              <tr>
+                                  <td>PCA</td>
+                                  <td>-</td>
+                                  <td>45</td>
+                                  <td>Dimensionality reduction</td>
+                                  <td>Numerical</td>
+                                  <td>Data visualization and summarization</td>
+                              </tr>
+                              <tr>
+                                  <td>CatBoost</td>
+                                  <td>91</td>
+                                  <td>240</td>
+                                  <td>Classification</td>
+                                  <td>Numerical, categorical</td>
+                                  <td>Handles categorical data natively</td>
+                              </tr>
+                              <tr>
+                                  <td>LightGBM</td>
+                                  <td>93</td>
+                                  <td>200</td>
+                                  <td>Classification</td>
+                                  <td>Numerical</td>
+                                  <td>Very fast, great for large datasets</td>
+                              </tr>
+                              <tr>
+                                  <td>Extra Trees</td>
+                                  <td>86</td>
+                                  <td>110</td>
+                                  <td>Classification</td>
+                                  <td>Numerical</td>
+                                  <td>Ensemble of randomized decision trees</td>
+                              </tr>
+                              <tr>
+                                  <td>Ridge Regression</td>
+                                  <td>72</td>
+                                  <td>30</td>
+                                  <td>Regression</td>
+                                  <td>Numerical</td>
+                                  <td>Regularized linear regression</td>
+                              </tr>
+                              <tr>
+                                  <td>Lasso Regression</td>
+                                  <td>71</td>
+                                  <td>35</td>
+                                  <td>Regression</td>
+                                  <td>Numerical</td>
+                                  <td>Feature selection ability</td>
+                              </tr>
+                              <tr>
+                                  <td>T-SNE</td>
+                                  <td>-</td>
+                                  <td>180</td>
+                                  <td>Dimensionality reduction</td>
+                                  <td>Numerical</td>
+                                  <td>Used for visualization</td>
+                              </tr>
+                              <tr>
+                                  <td>UMAP</td>
+                                  <td>-</td>
+                                  <td>160</td>
+                                  <td>Dimensionality reduction</td>
+                                  <td>Numerical</td>
+                                  <td>Preserves structure better than t-SNE</td>
+                              </tr>
+                              <tr>
+                                  <td>GMM</td>
+                                  <td>67</td>
+                                  <td>100</td>
+                                  <td>Clustering</td>
+                                  <td>Numerical</td>
+                                  <td>Based on probability distributions</td>
+                              </tr>
+                              <tr>
+                                  <td>ARIMA</td>
+                                  <td>77</td>
+                                  <td>220</td>
+                                  <td>Time series forecasting</td>
+                                  <td>Numerical</td>
+                                  <td>Requires stationary data</td>
+                              </tr>
+                              <tr>
+                                  <td>Prophet</td>
+                                  <td>80</td>
+                                  <td>100</td>
+                                  <td>Time series forecasting</td>
+                                  <td>Numerical</td>
+                                  <td>Simple and interpretable, from Facebook</td>
+                              </tr>
+                              <tr>
+                                  <td>Isolation Forest</td>
+                                  <td>84</td>
+                                  <td>90</td>
+                                  <td>Anomaly detection</td>
+                                  <td>Numerical</td>
+                                  <td>Works well with high-dimensional data</td>
+                              </tr>
+                              <tr>
+                                  <td>Autoencoder</td>
+                                  <td>85</td>
+                                  <td>450</td>
+                                  <td>Anomaly detection</td>
+                                  <td>Numerical</td>
+                                  <td>Deep learning-based dimensionality reduction</td>
+                              </tr>
+                              <tr>
+                                  <td>Perceptron</td>
+                                  <td>68</td>
+                                  <td>60</td>
+                                  <td>Binary classification</td>
+                                  <td>Numerical</td>
+                                  <td>Basic neural network building block</td>
+                              </tr>
+                              <tr>
+                                  <td>Q-Learning</td>
+                                  <td>-</td>
+                                  <td>600</td>
+                                  <td>Reinforcement learning</td>
+                                  <td>Numerical</td>
+                                  <td>Used in autonomous systems and robotics</td>
+                              </tr>
+                              <tr>
+                                  <td>Deep Q Network</td>
+                                  <td>-</td>
+                                  <td>900</td>
+                                  <td>Reinforcement learning</td>
+                                  <td>Numerical</td>
+                                  <td>Combines deep learning with Q-learning</td>
+                              </tr>
+                              
+                          </tbody>
+                          <tfoot>
+                              <tr>
+                                  <th>Algorithm Name</th>
+                                  <th>Accuracy (%)</th>
+                                  <th>Training Time (sec)</th>
+                                  <th>Usage Area</th>
+                                  <th>Data Type</th>
+                                  <th>Notes / Description</th>
+                              </tr>
+                          </tfoot>
+                      </table>
+      
+                  </div>
+      
+              </div>
+          </div>
+          
+            <!--end::Row-->
+          </div>
+          <!--end::Container-->
+        </div>
+        <div class="app-content">
+          <!--begin::Container-->
+          <div class="container-fluid">
+            <!-- Info boxes -->
+         
+            <!-- /.row -->
+            
+          </div>
+          <!--end::Container-->
+        </div>
+        <!--end::App Content-->
+      </main>
+      <!--end::App Main-->
+      <!--begin::Footer-->
+      <footer class="app-footer">
+        <!--begin::To the end-->
+        <div class="float-end d-none d-sm-inline">İclal Aca</div>
+        <!--end::To the end-->
+        <!--begin::Copyright-->
+        <strong>
+          Copyright &copy; 2025&nbsp;
+          <a href="https://adminlte.io" class="text-decoration-none">AdminLTE.io</a>.
+        </strong>
+        All rights reserved.
+        <!--end::Copyright-->
+      </footer>
+      <!--end::Footer-->
+    </div>
+    <!--end::App Wrapper-->
+    <!--begin::Script-->
+    <!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js"
+      integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ="
+      crossorigin="anonymous"
+    ></script>
+    <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
+    <script src="../../dist/js/adminlte.js"></script>
+    <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
+    <script>
+      const SELECTOR_SIDEBAR_WRAPPER = '.sidebar-wrapper';
+      const Default = {
+        scrollbarTheme: 'os-theme-light',
+        scrollbarAutoHide: 'leave',
+        scrollbarClickScroll: true,
+      };
+      document.addEventListener('DOMContentLoaded', function () {
+        const sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER);
+        if (sidebarWrapper && typeof OverlayScrollbarsGlobal?.OverlayScrollbars !== 'undefined') {
+          OverlayScrollbarsGlobal.OverlayScrollbars(sidebarWrapper, {
+            scrollbars: {
+              theme: Default.scrollbarTheme,
+              autoHide: Default.scrollbarAutoHide,
+              clickScroll: Default.scrollbarClickScroll,
+            },
+          });
+        }
+      });
+    </script>
+    <!--end::OverlayScrollbars Configure-->
+    <!-- OPTIONAL SCRIPTS -->
+    <!-- apexcharts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1/dist/apexcharts.min.js"
+      integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // NOTICE!! DO NOT USE ANY OF THIS JAVASCRIPT
+      // IT'S ALL JUST JUNK FOR DEMO
+      // ++++++++++++++++++++++++++++++++++++++++++
+
+      /* apexcharts
+       * -------
+       * Here we will create a few charts using apexcharts
+       */
+
+      //-----------------------
+      // - MONTHLY SALES CHART -
+      //-----------------------
+
+      const sales_chart_options = {
+        series: [
+          {
+            name: 'Digital Goods',
+            data: [28, 48, 40, 19, 86, 27, 90],
+          },
+          {
+            name: 'Electronics',
+            data: [65, 59, 80, 81, 56, 55, 40],
+          },
+        ],
+        chart: {
+          height: 180,
+          type: 'area',
+          toolbar: {
+            show: false,
+          },
+        },
+        legend: {
+          show: false,
+        },
+        colors: ['#0d6efd', '#20c997'],
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          curve: 'smooth',
+        },
+        xaxis: {
+          type: 'datetime',
+          categories: [
+            '2023-01-01',
+            '2023-02-01',
+            '2023-03-01',
+            '2023-04-01',
+            '2023-05-01',
+            '2023-06-01',
+            '2023-07-01',
+          ],
+        },
+        tooltip: {
+          x: {
+            format: 'MMMM yyyy',
+          },
+        },
+      };
+
+      const sales_chart = new ApexCharts(
+        document.querySelector('#sales-chart'),
+        sales_chart_options,
+      );
+      sales_chart.render();
+
+      //---------------------------
+      // - END MONTHLY SALES CHART -
+      //---------------------------
+
+      function createSparklineChart(selector, data) {
+        const options = {
+          series: [{ data }],
+          chart: {
+            type: 'line',
+            width: 150,
+            height: 30,
+            sparkline: {
+              enabled: true,
+            },
+          },
+          colors: ['var(--bs-primary)'],
+          stroke: {
+            width: 2,
+          },
+          tooltip: {
+            fixed: {
+              enabled: false,
+            },
+            x: {
+              show: false,
+            },
+            y: {
+              title: {
+                formatter: function (seriesName) {
+                  return '';
+                },
+              },
+            },
+            marker: {
+              show: false,
+            },
+          },
+        };
+
+        const chart = new ApexCharts(document.querySelector(selector), options);
+        chart.render();
+      }
+
+      const table_sparkline_1_data = [25, 66, 41, 89, 63, 25, 44, 12, 36, 9, 54];
+      const table_sparkline_2_data = [12, 56, 21, 39, 73, 45, 64, 52, 36, 59, 44];
+      const table_sparkline_3_data = [15, 46, 21, 59, 33, 15, 34, 42, 56, 19, 64];
+      const table_sparkline_4_data = [30, 56, 31, 69, 43, 35, 24, 32, 46, 29, 64];
+      const table_sparkline_5_data = [20, 76, 51, 79, 53, 35, 54, 22, 36, 49, 64];
+      const table_sparkline_6_data = [5, 36, 11, 69, 23, 15, 14, 42, 26, 19, 44];
+      const table_sparkline_7_data = [12, 56, 21, 39, 73, 45, 64, 52, 36, 59, 74];
+
+      createSparklineChart('#table-sparkline-1', table_sparkline_1_data);
+      createSparklineChart('#table-sparkline-2', table_sparkline_2_data);
+      createSparklineChart('#table-sparkline-3', table_sparkline_3_data);
+      createSparklineChart('#table-sparkline-4', table_sparkline_4_data);
+      createSparklineChart('#table-sparkline-5', table_sparkline_5_data);
+      createSparklineChart('#table-sparkline-6', table_sparkline_6_data);
+      createSparklineChart('#table-sparkline-7', table_sparkline_7_data);
+
+      //-------------
+      // - PIE CHART -
+      //-------------
+
+      const pie_chart_options = {
+        series: [700, 500, 400, 600, 300, 100],
+        chart: {
+          type: 'donut',
+        },
+        labels: ['Chrome', 'Edge', 'FireFox', 'Safari', 'Opera', 'IE'],
+        dataLabels: {
+          enabled: false,
+        },
+        colors: ['#0d6efd', '#20c997', '#ffc107', '#d63384', '#6f42c1', '#adb5bd'],
+      };
+
+      const pie_chart = new ApexCharts(document.querySelector('#pie-chart'), pie_chart_options);
+      pie_chart.render();
+
+      //-----------------
+      // - END PIE CHART -
+      //-----------------
+    </script>
+    <!--end::Script-->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/2.3.0/js/dataTables.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#table1').DataTable(
+              {
+                  stateSave: true
+              }
+            );
+        });
+    </script>
+    <script>
+      $(document).ready(function() {
+          $('#table2').DataTable(
+              {
+                  stateSave: true
+              }
+          );
+      });
+    </script>
+  
+  </body>
+  <!--end::Body-->
+</html>
